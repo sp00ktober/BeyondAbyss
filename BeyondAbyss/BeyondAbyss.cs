@@ -9,7 +9,13 @@ namespace BeyondAbyss
     {
         public static void Init()
         {
-            Winch.Core.API.DredgeEvent.ModAssetsLoaded += Patch;
+            //Winch.Core.API.DredgeEvent.ModAssetsLoaded += Patch;
+            WinchCore.Log.Info("Initializing BeyondAbyss...");
+
+            var harmony = new Harmony("com.dredge.BeyondAbyss");
+            harmony.PatchAll(Assembly.GetExecutingAssembly());
+
+            WinchCore.Log.Info("Done :D");
         }
 
         public static void Patch(object sender, EventArgs e)
