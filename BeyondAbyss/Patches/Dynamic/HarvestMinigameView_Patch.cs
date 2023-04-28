@@ -1,4 +1,5 @@
 ﻿using BeyondAbyss.Singletons;
+using FluffyUnderware.DevTools.Extensions;
 using HarmonyLib;
 using Newtonsoft.Json.Linq;
 using System;
@@ -55,17 +56,17 @@ namespace BeyondAbyss.Patches.Dynamic
 
         private static void PatchGameValues()
         {
-            GameManager.Instance.GameConfigData.DredgingDifficultyConfigs[HarvestDifficulty.VERY_EASY] = ConfigManager.INSTANCE.DredgingDifficultyConfigs[HarvestDifficulty.VERY_EASY];
-            GameManager.Instance.GameConfigData.DredgingDifficultyConfigs[HarvestDifficulty.EASY] = ConfigManager.INSTANCE.DredgingDifficultyConfigs[HarvestDifficulty.EASY];
-            GameManager.Instance.GameConfigData.DredgingDifficultyConfigs[HarvestDifficulty.MEDIUM] = ConfigManager.INSTANCE.DredgingDifficultyConfigs[HarvestDifficulty.MEDIUM];
-            GameManager.Instance.GameConfigData.DredgingDifficultyConfigs[HarvestDifficulty.HARD] = ConfigManager.INSTANCE.DredgingDifficultyConfigs[HarvestDifficulty.HARD];
-            GameManager.Instance.GameConfigData.DredgingDifficultyConfigs[HarvestDifficulty.VERY_HARD] = ConfigManager.INSTANCE.DredgingDifficultyConfigs[HarvestDifficulty.VERY_HARD];
+            Dictionary<HarvestDifficulty, HarvestDifficultyConfigData> customDredgingConfig = ConfigManager.INSTANCE.DredgingDifficultyConfigs;
+            foreach(KeyValuePair<HarvestDifficulty, HarvestDifficultyConfigData> entry in customDredgingConfig)
+            {
+                GameManager.Instance.GameConfigData.DredgingDifficultyConfigs[entry.Key] = entry.Value;
+            }
 
-            GameManager.Instance.GameConfigData.FishingDifficultyConfigs[HarvestDifficulty.VERY_EASY] = ConfigManager.INSTANCE.FishingDifficultyConfigs[HarvestDifficulty.VERY_EASY];
-            GameManager.Instance.GameConfigData.FishingDifficultyConfigs[HarvestDifficulty.EASY] = ConfigManager.INSTANCE.FishingDifficultyConfigs[HarvestDifficulty.EASY];
-            GameManager.Instance.GameConfigData.FishingDifficultyConfigs[HarvestDifficulty.MEDIUM] = ConfigManager.INSTANCE.FishingDifficultyConfigs[HarvestDifficulty.MEDIUM];
-            GameManager.Instance.GameConfigData.FishingDifficultyConfigs[HarvestDifficulty.HARD] = ConfigManager.INSTANCE.FishingDifficultyConfigs[HarvestDifficulty.HARD];
-            GameManager.Instance.GameConfigData.FishingDifficultyConfigs[HarvestDifficulty.VERY_HARD] = ConfigManager.INSTANCE.FishingDifficultyConfigs[HarvestDifficulty.VERY_HARD];
+            Dictionary<HarvestDifficulty, HarvestDifficultyConfigData> customFishingConfig = ConfigManager.INSTANCE.FishingDifficultyConfigs;
+            foreach (KeyValuePair<HarvestDifficulty, HarvestDifficultyConfigData> entry in customFishingConfig)
+            {
+                GameManager.Instance.GameConfigData.FishingDifficultyConfigs[entry.Key] = entry.Value;
+            }
         }
 
         private static HarvestDifficultyConfigData GetModDefaultValue(bool isDredge, HarvestDifficulty difficulty, HarvestDifficultyConfigData data)
