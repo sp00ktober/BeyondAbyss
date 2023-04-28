@@ -2,7 +2,7 @@
   "Author": "sp00ktober",
   "ModAssembly": "BeyondAbyss.dll",
   "Entrypoint": "BeyondAbyss.BeyondAbyss/Init",
-  "Version": "1.1",
-  "MinWinchVersion": "alpha-1.2",
+  "Version": "0.1.0",
+  "MinWinchVersion": "alpha-1.3",
   "DefaultConfig": {}
 }
