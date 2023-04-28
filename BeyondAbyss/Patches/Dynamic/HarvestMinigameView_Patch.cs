@@ -44,22 +44,11 @@ namespace BeyondAbyss.Patches.Dynamic
 
                     foreach (KeyValuePair<HarvestDifficulty, HarvestDifficultyConfigData> kvPair in GameManager.Instance.GameConfigData.DredgingDifficultyConfigs)
                     {
-                        JObject jobj = (JObject)JToken.FromObject(kvPair.Value);
-                        WinchCore.Log.Info($"{(jobj == null ? "Failed" : "Succeeded")} in serialization of HarvestDifficultyConfigData for difficulty '{System.Enum.GetName(typeof(HarvestDifficulty), kvPair.Key)}'.");
-                        if (jobj != null)
-                        {
-                            ConfigManager.INSTANCE.AddDredgingDifficulty(kvPair.Value);
-                        }
+                        ConfigManager.INSTANCE.AddFishingDifficulty(kvPair.Value);
                     }
-
                     foreach (KeyValuePair<HarvestDifficulty, HarvestDifficultyConfigData> kvPair in GameManager.Instance.GameConfigData.FishingDifficultyConfigs)
                     {
-                        JObject jobj = (JObject)JToken.FromObject(kvPair.Value);
-                        WinchCore.Log.Info($"{(jobj == null ? "Failed" : "Succeeded")} in serialization of HarvestDifficultyConfigData for difficulty '{System.Enum.GetName(typeof(HarvestDifficulty), kvPair.Key)}'.");
-                        if (jobj != null)
-                        {
-                            ConfigManager.INSTANCE.AddFishingDifficulty(kvPair.Value);
-                        }
+                        ConfigManager.INSTANCE.AddFishingDifficulty(kvPair.Value);
                     }
 
                     ConfigManager.INSTANCE.SaveMinigameConfig();
