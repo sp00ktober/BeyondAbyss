@@ -1,5 +1,4 @@
 ﻿using BeyondAbyss.Singletons;
-using FluffyUnderware.DevTools.Extensions;
 using HarmonyLib;
 using Newtonsoft.Json.Linq;
 using System;
