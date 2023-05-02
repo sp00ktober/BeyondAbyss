@@ -105,6 +105,7 @@
     <Compile Include="BeyondAbyss.cs" />
     <Compile Include="Helper\Transpiler.cs" />
     <Compile Include="Patches\Dynamic\HarvestMinigameView_Patch.cs" />
+    <Compile Include="Patches\Dynamic\PlayerSanity_Patch.cs" />
     <Compile Include="Patches\Dynamic\TimeController_Patch.cs" />
     <Compile Include="Patches\Transpiler\TimeController_Transpiler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
