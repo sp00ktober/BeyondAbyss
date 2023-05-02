@@ -26,7 +26,7 @@ namespace BeyondAbyss.Patches.Dynamic
                     PatchGameValues();
                     didOverwriteGameValuesWithConfig = true;
                 }
-                else
+                else if(!ConfigManager.INSTANCE.HasLoadedHarvestDifficulty)
                 {
                     // no custom values found, dumping game default ones into config.
                     WinchCore.Log.Info("No config file found or loaded incompletely, dumping mod defaults to config dir.");
