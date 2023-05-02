@@ -38,6 +38,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\GOG Games\DREDGE\DREDGE_Data\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
+    <Reference Include="Cinemachine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\GOG Games\DREDGE\DREDGE_Data\Managed\Cinemachine.dll</HintPath>
+    </Reference>
     <Reference Include="Mono.Cecil, Version=0.11.5.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
       <HintPath>..\packages\Mono.Cecil.0.11.5\lib\net40\Mono.Cecil.dll</HintPath>
     </Reference>
@@ -119,6 +123,7 @@
     <Compile Include="Patches\Dynamic\BoatActionsDestinationUI_Patch.cs" />
     <Compile Include="Patches\Dynamic\HarvestMinigameView_Patch.cs" />
     <Compile Include="Patches\Dynamic\PlayerSanity_Patch.cs" />
+    <Compile Include="Patches\Transpiler\HarvestMinigameView_Transpiler.cs" />
     <Compile Include="Patches\Transpiler\TimeController_Transpiler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Singletons\ConfigManager.cs" />
