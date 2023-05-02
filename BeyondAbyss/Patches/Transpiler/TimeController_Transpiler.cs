@@ -1,4 +1,5 @@
-﻿using HarmonyLib;
+﻿using BeyondAbyss.Singletons;
+using HarmonyLib;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -34,8 +35,9 @@ namespace BeyondAbyss.Patches.Transpiler
                 .SetAndAdvance(OpCodes.Ldarg, 0)
                 .Insert(Helper.Transpiler.EmitDelegate<Func<TimeController, float>>((instance) =>
                 {
+                    if (ConfigManager.INSTANCE.SleepingOnLand) return GameManager.Instance.GameConfigData.FishingTimePassageSpeedModifier;
 
-                    return GameManager.Instance.GameConfigData.FishingTimePassageSpeedModifier * (instance.IsDaytime ? 1.5f : 0.5f);
+                    return GameManager.Instance.GameConfigData.FishingTimePassageSpeedModifier * (instance.IsDaytime ? 1.2f : 0.8f);
                 }));
 
             matcher
@@ -56,7 +58,9 @@ namespace BeyondAbyss.Patches.Transpiler
                 .InsertAndAdvance(new CodeInstruction(OpCodes.Ldarg_0))
                 .Insert(Helper.Transpiler.EmitDelegate<Func<float, TimeController, float>>((magnitude, instance) =>
                 {
-                    return magnitude * (instance.IsDaytime ? 1.5f : 0.5f);
+                    if (ConfigManager.INSTANCE.SleepingOnLand) return magnitude;
+
+                    return magnitude * (instance.IsDaytime ? 1.2f : 0.8f);
                 }));
 
             return matcher.InstructionEnumeration();

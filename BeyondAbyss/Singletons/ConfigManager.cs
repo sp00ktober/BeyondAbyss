@@ -41,6 +41,7 @@ namespace BeyondAbyss.Singletons
                     FishingDifficultyConfigs.ContainsKey(HarvestDifficulty.VERY_HARD);
             }
         }
+        public bool SleepingOnLand { get; set; }
         static ConfigManager() { }
         private ConfigManager()
         {
