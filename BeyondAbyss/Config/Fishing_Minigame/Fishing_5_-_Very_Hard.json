@@ -1,0 +1,116 @@
+{
+  "targetValue": 0.25,
+  "secondsToPassivelyCatch": 15.0,
+  "rotationSpeed": 280.0,
+  "minTargets": 3,
+  "maxTargets": 5,
+  "minTargetWidth": 10,
+  "maxTargetWidth": 13,
+  "specialTargetWidth": 6,
+  "numPendulumSegments": 3,
+  "ballCatcherPatterns": [
+    [
+      {
+        "direction": 0,
+        "delayBeforeNextBall": 1.0,
+        "ballType": 0
+      },
+      {
+        "direction": 1,
+        "delayBeforeNextBall": 1.0,
+        "ballType": 0
+      }
+    ],
+    [
+      {
+        "direction": 1,
+        "delayBeforeNextBall": 1.0,
+        "ballType": 0
+      },
+      {
+        "direction": 0,
+        "delayBeforeNextBall": 1.0,
+        "ballType": 0
+      }
+    ],
+    [
+      {
+        "direction": 0,
+        "delayBeforeNextBall": 1.0,
+        "ballType": 0
+      },
+      {
+        "direction": 0,
+        "delayBeforeNextBall": 0.5,
+        "ballType": 0
+      },
+      {
+        "direction": 1,
+        "delayBeforeNextBall": 0.5,
+        "ballType": 0
+      }
+    ],
+    [
+      {
+        "direction": 1,
+        "delayBeforeNextBall": 1.0,
+        "ballType": 0
+      },
+      {
+        "direction": 1,
+        "delayBeforeNextBall": 0.5,
+        "ballType": 0
+      },
+      {
+        "direction": 0,
+        "delayBeforeNextBall": 0.5,
+        "ballType": 0
+      }
+    ],
+    [
+      {
+        "direction": 0,
+        "delayBeforeNextBall": 1.0,
+        "ballType": 0
+      },
+      {
+        "direction": 1,
+        "delayBeforeNextBall": 1.0,
+        "ballType": 0
+      },
+      {
+        "direction": 0,
+        "delayBeforeNextBall": 1.0,
+        "ballType": 0
+      }
+    ],
+    [
+      {
+        "direction": 1,
+        "delayBeforeNextBall": 1.0,
+        "ballType": 0
+      },
+      {
+        "direction": 0,
+        "delayBeforeNextBall": 1.0,
+        "ballType": 0
+      },
+      {
+        "direction": 1,
+        "delayBeforeNextBall": 1.0,
+        "ballType": 0
+      }
+    ]
+  ],
+  "valueFactor": 0.3,
+  "speedFactor": 1.8,
+  "ballTrophySpeedFactor": 3.5,
+  "targetZoneDegrees": 22.0,
+  "diamondRotation": 270.0,
+  "diamondScaleUpTimeSec": 0.6,
+  "diamondTrophySpeedFactor": 3.5,
+  "timeBetweenDiamondTargetsMin": 0.4,
+  "timeBetweenDiamondTargetsMax": 2.0,
+  "name": "Fishing 5 - Very Hard",
+  "hideFlags": 0
+}

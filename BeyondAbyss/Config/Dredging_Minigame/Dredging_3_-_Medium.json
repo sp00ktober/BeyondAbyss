@@ -1,0 +1,23 @@
+{
+  "targetValue": 0.25,
+  "secondsToPassivelyCatch": 9.0,
+  "rotationSpeed": 160.0,
+  "minTargets": 8,
+  "maxTargets": 8,
+  "minTargetWidth": 10,
+  "maxTargetWidth": 15,
+  "specialTargetWidth": 0,
+  "numPendulumSegments": 0,
+  "ballCatcherPatterns": null,
+  "valueFactor": 0.0,
+  "speedFactor": 0.0,
+  "ballTrophySpeedFactor": 0.0,
+  "targetZoneDegrees": 0.0,
+  "diamondRotation": 0.0,
+  "diamondScaleUpTimeSec": 0.0,
+  "diamondTrophySpeedFactor": 0.0,
+  "timeBetweenDiamondTargetsMin": 0.0,
+  "timeBetweenDiamondTargetsMax": 0.0,
+  "name": "Dredging 3 - Medium",
+  "hideFlags": 0
+}

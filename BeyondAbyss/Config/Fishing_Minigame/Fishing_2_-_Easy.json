@@ -1,0 +1,82 @@
+{
+  "targetValue": 0.3,
+  "secondsToPassivelyCatch": 8.0,
+  "rotationSpeed": 170.0,
+  "minTargets": 2,
+  "maxTargets": 3,
+  "minTargetWidth": 20,
+  "maxTargetWidth": 25,
+  "specialTargetWidth": 13,
+  "numPendulumSegments": 2,
+  "ballCatcherPatterns": [
+    [
+      {
+        "direction": 0,
+        "delayBeforeNextBall": 1.0,
+        "ballType": 0
+      },
+      {
+        "direction": 1,
+        "delayBeforeNextBall": 1.0,
+        "ballType": 0
+      }
+    ],
+    [
+      {
+        "direction": 1,
+        "delayBeforeNextBall": 1.0,
+        "ballType": 0
+      },
+      {
+        "direction": 0,
+        "delayBeforeNextBall": 1.0,
+        "ballType": 0
+      }
+    ],
+    [
+      {
+        "direction": 0,
+        "delayBeforeNextBall": 1.0,
+        "ballType": 0
+      },
+      {
+        "direction": 0,
+        "delayBeforeNextBall": 0.5,
+        "ballType": 0
+      },
+      {
+        "direction": 1,
+        "delayBeforeNextBall": 0.5,
+        "ballType": 0
+      }
+    ],
+    [
+      {
+        "direction": 1,
+        "delayBeforeNextBall": 1.0,
+        "ballType": 0
+      },
+      {
+        "direction": 1,
+        "delayBeforeNextBall": 0.5,
+        "ballType": 0
+      },
+      {
+        "direction": 0,
+        "delayBeforeNextBall": 0.5,
+        "ballType": 0
+      }
+    ]
+  ],
+  "valueFactor": 0.7,
+  "speedFactor": 1.3,
+  "ballTrophySpeedFactor": 3.5,
+  "targetZoneDegrees": 35.0,
+  "diamondRotation": 45.0,
+  "diamondScaleUpTimeSec": 1.2,
+  "diamondTrophySpeedFactor": 3.5,
+  "timeBetweenDiamondTargetsMin": 0.9,
+  "timeBetweenDiamondTargetsMax": 2.0,
+  "name": "Fishing 2 - Easy",
+  "hideFlags": 0
+}

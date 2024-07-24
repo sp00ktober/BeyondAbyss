@@ -1,0 +1,23 @@
+{
+  "targetValue": 0.2,
+  "secondsToPassivelyCatch": 8.0,
+  "rotationSpeed": 150.0,
+  "minTargets": 7,
+  "maxTargets": 7,
+  "minTargetWidth": 10,
+  "maxTargetWidth": 15,
+  "specialTargetWidth": 0,
+  "numPendulumSegments": 0,
+  "ballCatcherPatterns": null,
+  "valueFactor": 0.0,
+  "speedFactor": 0.0,
+  "ballTrophySpeedFactor": 0.0,
+  "targetZoneDegrees": 0.0,
+  "diamondRotation": 0.0,
+  "diamondScaleUpTimeSec": 0.0,
+  "diamondTrophySpeedFactor": 0.0,
+  "timeBetweenDiamondTargetsMin": 0.0,
+  "timeBetweenDiamondTargetsMax": 0.0,
+  "name": "Dredging 2 - Easy",
+  "hideFlags": 0
+}

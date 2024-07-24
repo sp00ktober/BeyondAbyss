@@ -1,0 +1,48 @@
+{
+  "targetValue": 0.35,
+  "secondsToPassivelyCatch": 6.0,
+  "rotationSpeed": 140.0,
+  "minTargets": 2,
+  "maxTargets": 3,
+  "minTargetWidth": 30,
+  "maxTargetWidth": 40,
+  "specialTargetWidth": 18,
+  "numPendulumSegments": 2,
+  "ballCatcherPatterns": [
+    [
+      {
+        "direction": 0,
+        "delayBeforeNextBall": 1.0,
+        "ballType": 0
+      },
+      {
+        "direction": 1,
+        "delayBeforeNextBall": 1.0,
+        "ballType": 0
+      }
+    ],
+    [
+      {
+        "direction": 1,
+        "delayBeforeNextBall": 1.0,
+        "ballType": 0
+      },
+      {
+        "direction": 0,
+        "delayBeforeNextBall": 1.0,
+        "ballType": 0
+      }
+    ]
+  ],
+  "valueFactor": 0.9,
+  "speedFactor": 1.1,
+  "ballTrophySpeedFactor": 3.5,
+  "targetZoneDegrees": 40.0,
+  "diamondRotation": 0.0,
+  "diamondScaleUpTimeSec": 1.5,
+  "diamondTrophySpeedFactor": 3.5,
+  "timeBetweenDiamondTargetsMin": 1.0,
+  "timeBetweenDiamondTargetsMax": 2.0,
+  "name": "Fishing 1 - Very Easy",
+  "hideFlags": 0
+}
